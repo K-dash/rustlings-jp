@@ -9,7 +9,7 @@ fn main() {
 
     // TODO: matchの中に修正を加えることでコンパイルエラーを修正してください。
     match optional_point {
-        Some(p) => println!("Co-ordinates are {},{}", p.x, p.y),
+        Some(ref p) => println!("Co-ordinates are {},{}", p.x, p.y),
         _ => panic!("No match!"),
     }
 
